@@ -1,10 +1,23 @@
-import styled from 'styled-components'
+import * as React from "react";
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+import BackgroundAnim from "../components/BackgroundAnim";
+import Hero from "../components/Hero";
+import GlobalStyles from "../styles/GlobalStyles";
+import Typography from "../styles/Typography";
+import Services from "../components/Services";
+import ToolBox from "../components/ToolBox";
 
-export default function Home() {
-  return <Title>My page</Title>
-}
+const IndexPage = () => (
+  <div>
+    <BackgroundAnim />
+    <Typography />
+    <GlobalStyles />
+
+    <Hero />
+    <Services />
+    <ToolBox />
+    <Hero />
+  </div>
+);
+
+export default IndexPage;
