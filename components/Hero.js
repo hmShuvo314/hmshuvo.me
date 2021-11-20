@@ -7,6 +7,8 @@ import {
 } from "../styles/HeroStyles";
 import { FaCodepen, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { ImGithub } from "react-icons/im";
+import Nav from "./Nav";
+import Header from "./Header";
 
 const Hero = () => {
   return (
@@ -64,6 +66,7 @@ const Hero = () => {
           </li>
         </ul>
       </HeroRightStyles>
+      <Header />
     </HeroStyles>
   );
 };

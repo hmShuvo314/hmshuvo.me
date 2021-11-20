@@ -20,13 +20,13 @@ const Services = () => {
         </button>
       </ServicesTitleStyles>
       <ServicesGroupStyles>
-        <div className="single-service">
+        {/* <div className="single-service">
           <h4>Fast & Secure</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
             deserunt!
           </p>
-        </div>
+        </div> */}
       </ServicesGroupStyles>
     </ServicesStyles>
   );

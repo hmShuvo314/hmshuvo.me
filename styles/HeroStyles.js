@@ -28,7 +28,6 @@ export const HeroTitleStyles = styled.div`
     font-size: 13vmin;
     line-height: 14vmin;
     letter-spacing: 0.4vmin;
-    background: url("https://wallpaperaccess.com/full/1523270.jpg");
     background: url("https://wallpapercave.com/wp/wp3850859.jpg");
     -webkit-background-clip: text;
     background-clip: text;
@@ -38,11 +37,8 @@ export const HeroTitleStyles = styled.div`
   }
 
   p {
-    font-size: 4vmin;
-    font-style: italic;
-    letter-spacing: 0.3vmin;
+    font-weight: 500;
     color: wheat;
-    font-family: Pacifico, -apple-system, BlinkMacSystemFont;
   }
 
   .typed {
@@ -52,9 +48,13 @@ export const HeroTitleStyles = styled.div`
 
 export const HeroRightStyles = styled.div`
   position: relative;
+  ul {
+    display: grid;
+    /* gap: 1rem; */
+  }
   a {
     color: var(--grey);
-    font-size: 7vmin;
+    font-size: 5vmin;
 
     transition: all 0.3s ease-in-out;
   }

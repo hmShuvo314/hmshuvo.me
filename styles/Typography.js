@@ -19,10 +19,16 @@ const Typography = createGlobalStyle`
     font-family:"Fattern",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--black);
   }
-  p, li {
-    letter-spacing: 0.5px;
+
+  p {
+    font-size: 4.5vmin;
+    font-style: italic;
+    line-height: 5vmin;
+    font-weight: 700;
+    letter-spacing: 0.5vmin;
+    font-family: Pacifico, -apple-system, BlinkMacSystemFont;
   }
-  h1,h2,h3,h4,h5,h6 {
+  h1,h2,h3 {
     font-family: "Fattern", Arial, Helvetica, sans-serif;
     background: url(${bg.src});
     -webkit-background-clip: text;

@@ -60,9 +60,8 @@ const GlobalStyles = createGlobalStyle`
     border-radius: 2vmin;
     font-family: mako, -apple-system, BlinkMacSystemFont;
   } */
-  a:hover{
+ button, a:hover{
     cursor: url(${pointer.src}), default !important;
-
   }
 
 
@@ -100,7 +99,7 @@ const GlobalStyles = createGlobalStyle`
     position: relative;
   height: 100vh;
   width: 100vw;
-  padding: clamp(2rem, 8vw, 20rem);
+  padding: 0rem clamp(2rem, 8vw, 20rem);
   z-index: 2;
 
   &::before{
@@ -131,11 +130,11 @@ const GlobalStyles = createGlobalStyle`
     border: none;
     color: #f8d47d;
     letter-spacing: 0.2vmin;
-    font-size: 3vmin;
+    font-size: 3.5vmin;
     font-weight: 700;
   }
   .btn span {
-    padding: 1vmin 3vmin;
+    padding: .5vmin 3vmin;
     position: relative;
     display: block;
     width: 100%;

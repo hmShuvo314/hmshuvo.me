@@ -15,28 +15,18 @@ export const ServicesTitleStyles = styled.div`
     color: var(--black);
     font-size: 11vmin;
     line-height: 11vmin;
-    background: url("https://wallpaperaccess.com/full/1523270.jpg");
+    background: url("https://wallup.net/wp-content/uploads/2016/01/153880-abstract-colorful-748x468.jpg");
     -webkit-background-clip: text;
+    letter-spacing: 1vmin;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-position: center center;
     background-size: contain;
   }
   p {
-    font-size: 4vmin;
-    font-style: italic;
-    line-height: 5vmin;
-    font-weight: 700;
-    letter-spacing: 0.6vmin;
+    letter-spacing: 0.8vmin;
     color: var(--black);
     text-shadow: 3px 3px 2px wheat;
-    font-family: Pacifico, -apple-system, BlinkMacSystemFont;
-  }
-  button {
-    font-size: 3.5vmin;
-    span {
-      padding: 0.5vmin 3vmin;
-    }
   }
 `;
 
