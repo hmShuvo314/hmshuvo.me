@@ -12,26 +12,10 @@ import {
   FcAbout,
 } from "react-icons/fc";
 
-const Nav = () => {
-  const menuRef = useRef();
-  const itemsRef = useRef();
-  useEffect(() => {
-    const showMenu = () => {
-      itemsRef.current.classList.toggle("showMenu");
-      menuRef.current.classList.toggle("showMenu");
-    };
-    menuRef.current.addEventListener("click", showMenu);
-    return () => menuRef.current.removeEventListener("click", showMenu);
-  }, []);
+const Nav = ({ navRef }) => {
   return (
     <NavStyles>
-      <div ref={menuRef} className="menu__item--hamburger">
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </div>
-
-      <div ref={itemsRef} className="items">
+      <div ref={navRef} className="items">
         <ul>
           <li>
             <Link href="/">

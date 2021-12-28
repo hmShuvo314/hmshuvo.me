@@ -4,11 +4,15 @@ import bg from "../public/images/textBG.png";
 const Typography = createGlobalStyle`
   @font-face {
     font-family: "Fattern";
-     src:  url("/fonts/Fattern-GO6zm.otf") ;
+     src:  url("/fonts/Fattern.otf") ;
   }
   @font-face {
     font-family: "Pacifico";
      src:  url("/fonts/Pacifico.ttf") ;
+  }
+  @font-face {
+    font-family: "Ubuntu";
+     src:  url("/fonts/Ubuntu-bold.ttf") ;
   }
 
   @font-face {
@@ -24,19 +28,12 @@ const Typography = createGlobalStyle`
     font-size: 4.5vmin;
     font-style: italic;
     line-height: 5vmin;
-    font-weight: 700;
+    font-weight: normal;
     letter-spacing: 0.5vmin;
     font-family: Pacifico, -apple-system, BlinkMacSystemFont;
   }
   h1,h2,h3 {
     font-family: "Fattern", Arial, Helvetica, sans-serif;
-    background: url(${bg.src});
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-position: center center;
-    background-size: contain;
-
   }
   a {
     color: var(--black);

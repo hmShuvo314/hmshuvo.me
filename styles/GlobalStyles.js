@@ -96,23 +96,46 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .page {
-    position: relative;
+  position:relative;
+
   height: 100vh;
   width: 100vw;
   padding: 0rem clamp(2rem, 8vw, 20rem);
-  z-index: 2;
+  z-index: 299;
 
-  &::before{
-    position: absolute;
-    content: '';
-    left: 5%;
-    top: 5%;
-    height: 90%;
-    width: 90%;
-    border-radius: 1.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    z-index: -1;
-    backdrop-filter: blur(5px);
+
+  filter: drop-shadow(.7vmin .7vmin 2px rgba(0, 0, 0, 0.5));
+  &::after{
+    content: ' ';
+      position:absolute;
+      background: red;
+      height:20vmin;
+      width: 20vmin;
+      left: 5%;
+      bottom: 5%;
+      background: linear-gradient(to right top, #7da9b3 0, #d2f1fb 65%, #025364);
+      clip-path: polygon(-50% -50%, 150% 150%, 150% -50%);
+      border-top-right-radius: 1.5rem;
+      box-shadow: 0 0px 15px 4px #112429;
+      opacity: .35;
+      display: inline-block;
+
+    }
+
+    &::before{
+      position: absolute;
+      content: '';
+      left: 5%;
+      top: 5%;
+      height: 90%;
+      width: 90%;
+      border-radius: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      background: linear-gradient(45deg, transparent, 14.1421356237vmin, rgba(255, 255, 255, 0.1) 0);
+      box-shadow: 0px 0px 3px 2px rgb(0 0 0 / 10%);
+      z-index: -1;
+      backdrop-filter: blur(2px);
+      clip-path: polygon(-20% -20%, 120% -20%, 120% 120%, 20vmin  100%, 0% calc( 100% - 20vmin));
   }
 
 }

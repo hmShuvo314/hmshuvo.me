@@ -25,11 +25,10 @@ export const ToolBoxStyles = styled.div`
   h3 {
     font-weight: 800 !important;
     color: var(--black);
-    font-size: 11vmin;
+    font-size: 8vmin;
     letter-spacing: 1vmin;
-    line-height: 11vmin;
     background: url("https://cdn.wallpapersafari.com/51/32/AXzc97.jpg");
-
+    background: url("https://wallpapercave.com/wp/wp3850859.jpg");
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -37,8 +36,7 @@ export const ToolBoxStyles = styled.div`
     background-size: contain;
   }
   p {
-    color: var(--black);
-    text-shadow: 2px 2px 2px wheat;
+    color: black;
     font-family: Pacifico, -apple-system, BlinkMacSystemFont;
   }
 `;

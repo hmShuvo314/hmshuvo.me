@@ -9,15 +9,14 @@ import { FaCodepen, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { ImGithub } from "react-icons/im";
 import Nav from "./Nav";
 import Header from "./Header";
+import HoverAnim from "./HoverAnim";
 
 const Hero = () => {
   return (
     <HeroStyles className="page">
       <HeroTitleStyles>
-        <h1>
-          Hy! I Am
-          <br />H M Shuvo
-        </h1>
+        <h1>Hy! I Am</h1>
+        <h1>H M Shuvo</h1>
 
         <p>
           I make websites that are{" "}
@@ -27,7 +26,6 @@ const Hero = () => {
               typeSpeed={100}
               backSpeed={40}
               loop={true}
-              color={"rgb(197, 18, 54)"}
             />
           </span>
         </p>
@@ -40,29 +38,29 @@ const Hero = () => {
       <HeroRightStyles>
         <ul>
           <li>
-            {" "}
             <a href="#" className="linkedin">
               <FaLinkedin />
             </a>
+            <p>Linkedin</p>
           </li>
           <li>
-            {" "}
             <a href="#" className="github">
               <ImGithub />
             </a>
+            <p>Github</p>
           </li>
 
           <li>
-            {" "}
             <a href="#" className="github">
               <FaCodepen />
             </a>
+            <p>Github</p>
           </li>
           <li>
-            {" "}
             <a href="#" className="twitter">
               <FaTwitter />
             </a>
+            <p>Twitter</p>
           </li>
         </ul>
       </HeroRightStyles>

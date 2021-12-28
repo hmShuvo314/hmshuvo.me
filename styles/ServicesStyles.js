@@ -13,9 +13,9 @@ export const ServicesTitleStyles = styled.div`
   h3 {
     font-weight: 800 !important;
     color: var(--black);
-    font-size: 11vmin;
-    line-height: 11vmin;
+    font-size: 8vmin;
     background: url("https://wallup.net/wp-content/uploads/2016/01/153880-abstract-colorful-748x468.jpg");
+    background: url("https://wallpapercave.com/wp/wp3850859.jpg");
     -webkit-background-clip: text;
     letter-spacing: 1vmin;
     background-clip: text;
@@ -26,7 +26,8 @@ export const ServicesTitleStyles = styled.div`
   p {
     letter-spacing: 0.8vmin;
     color: var(--black);
-    text-shadow: 3px 3px 2px wheat;
+    color: black;
+    /* text-shadow: 3px 3px 2px wheat; */
   }
 `;
 

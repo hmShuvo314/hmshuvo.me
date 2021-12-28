@@ -1,40 +1,12 @@
 import styled from "styled-components";
 
 export const NavStyles = styled.nav`
-  /* border: 2px solid white;
-  border-radius: 0% 100% 0% 100% / 0% 0% 100% 100%; */
+  /* border: 2px solid white; */
   top: 0%;
   position: absolute;
   right: 0;
   width: 33vmin;
   height: 33vmin;
-  .menu__item--hamburger {
-    position: absolute;
-    top: 10%;
-    right: 18%;
-    z-index: 11;
-    transform: scale(0.6);
-    .line {
-      height: 8px;
-      width: 45px;
-      background: #fff;
-      margin: 5px auto;
-      transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-  }
-  .showMenu {
-    .line:nth-child(1) {
-      transform: rotate(45deg) translate(10px, 10px);
-      transform-origin: center;
-    }
-    .line:nth-child(2) {
-      visibility: hidden;
-    }
-    .line:nth-child(3) {
-      transform: rotate(-45deg) translate(8px, -10px);
-      transform-origin: center;
-    }
-  }
 
   .items {
     transform: scale(0);
@@ -50,10 +22,10 @@ export const NavStyles = styled.nav`
       display: grid;
       place-content: center;
       place-items: center;
-      background-color: whitesmoke;
       width: 8.2vmin;
       height: 8.2vmin;
       border-radius: 50%;
+      /* box-shadow: inset 0 0 3vmin 0 rgba(255, 255, 255, 1); */
       &:nth-child(1) {
         transform: translate(0%, 0%);
       }
@@ -72,6 +44,8 @@ export const NavStyles = styled.nav`
       h5 {
         color: black;
         font-size: 2vmin;
+        color: white;
+
         font-family: mako, apple-system, inkMacSystemFont;
       }
     }
