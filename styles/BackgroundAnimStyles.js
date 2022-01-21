@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 const BackgroundAnimStyles = styled.div`
+  .sky {
+    background: #040b3c;
+  }
+  .sea {
+    background: #012459;
+  }
   @keyframes waves {
     to {
       transform: translateY(-50%) rotate(540deg);

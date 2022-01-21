@@ -7,6 +7,8 @@ export const HeroStyles = styled.div`
   align-items: center;
   grid-template-columns: 1fr auto;
 
+  /* transform: perspective(1500px) rotateX(-15deg); */
+
   .badge {
     position: absolute;
     width: 30vmin;
@@ -26,17 +28,53 @@ export const HeroTitleStyles = styled.div`
 
   h1 {
     position: relative;
-    color: wheat;
-    font-size: 9vmin;
+    font-size: 12vmin;
     letter-spacing: 0.3vmin;
-    background: url("https://wallpapercave.com/wp/wp3850859.jpg");
-    /* background: url("https://t4.ftcdn.net/jpg/02/85/23/79/240_F_285237915_dQuWitjr03eReEhkc9q5CZ5z6tmeXuN1.jpg"); */
-
-    -webkit-background-clip: text;
+    color: transparent;
+    background: url("https://cdn.wallpapersafari.com/73/6/YeVKWE.jpg");
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-position: top top;
-    background-size: contain;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 2vmin;
+    animation: anim 12s alternate infinite;
+    background-size: 65vmax;
+
+    @keyframes anim {
+      from {
+        background-position: top left;
+      }
+      to {
+        background-position: bottom right;
+      }
+    }
+    /* background-size: contain; */
+
+    span {
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.2);
+      /* background: rgba(255, 255, 255, 0.1); */
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      &.hover {
+        animation: animate 0.3s linear infinite;
+
+        @keyframes animate {
+          0% {
+            transform: scaleY(0.5) rotateZ(10deg);
+          }
+          25% {
+            transform: scaleY(0.5) scaleX(1.5);
+          }
+          50% {
+            transform: scaleY(1) scaleX(1.5);
+          }
+          100% {
+            transform: scale(1) rotateZ(-10deg);
+          }
+        }
+      }
+    }
   }
 
   p {

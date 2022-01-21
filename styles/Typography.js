@@ -19,6 +19,10 @@ const Typography = createGlobalStyle`
     font-family: "mako";
     src: url("/fonts/Mako-Regular.ttf") ;
   }
+  @font-face {
+    font-family: "roboto";
+    src: url("/fonts/roboto.ttf") ;
+  }
   html {
     font-family:"Fattern",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--black);

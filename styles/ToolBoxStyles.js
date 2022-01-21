@@ -29,6 +29,8 @@ export const ToolBoxStyles = styled.div`
     letter-spacing: 1vmin;
     background: url("https://cdn.wallpapersafari.com/51/32/AXzc97.jpg");
     background: url("https://wallpapercave.com/wp/wp3850859.jpg");
+    background: url("https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
+
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

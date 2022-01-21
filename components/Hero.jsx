@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactTyped from "react-typed";
 import {
   HeroRightStyles,
@@ -7,17 +7,45 @@ import {
 } from "../styles/HeroStyles";
 import { FaCodepen, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { ImGithub } from "react-icons/im";
-import Nav from "./Nav";
 import Header from "./Header";
-import HoverAnim from "./HoverAnim";
+import Letter from "./Letter";
 
 const Hero = () => {
-  return (
-    <HeroStyles className="page">
-      <HeroTitleStyles>
-        <h1>Hy! I Am</h1>
-        <h1>H M Shuvo</h1>
+  const [rotate, setRotate] = useState(0);
+  const [myName, _] = useState(["Hy!", "I", "am", "br", "H", "M", "Shuvo"]);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollLength = window.scrollY % window.innerHeight;
 
+      const scrollPercentage = (scrollLength / window.innerHeight) * 100;
+
+      const rotateAmount = Math.floor(scrollPercentage);
+      setRotate(rotateAmount);
+    };
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <HeroStyles
+      className="page"
+      style={{
+        transform: `perspective(1500px) rotateX(${-rotate}deg)`,
+      }}
+    >
+      <HeroTitleStyles>
+        <h1>
+          {myName.map((word, idx) =>
+            word === "br" ? (
+              <br />
+            ) : (
+              <>
+                {word.split("").map((letter) => (
+                  <Letter letter={letter} idx={idx} />
+                ))}{" "}
+              </>
+            )
+          )}
+        </h1>
         <p>
           I make websites that are{" "}
           <span className="typed">

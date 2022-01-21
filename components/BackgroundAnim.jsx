@@ -40,80 +40,83 @@ const BackgroundAnim = () => {
   return (
     <BackgroundAnimStyles>
       <div className="landscape">
-        <svg
-          ref={skyRef}
-          xmlns="http://www.w3.org/2000/svg"
-          width="100%"
-          height="51vh"
-          id="aero"
-        >
-          <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop stopColor="rgb(0,0,12)" offset="0%" id="zenith">
-              <animate
-                attributeName="stop-color"
-                dur="24s"
-                values="#040b3c;#192861;#f06b7e;#fee154;#fee154;#efeebc;#efeebc;#74d4cc;#74d4cc;#74d4cc;#74d4cc;#efeebc;#fee154;#f06b7e;#5b2c83;#28166b;#192861;#040b3c ;#040b3c"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="offset"
-                dur="24s"
-                values="0;.85;.6;.1;0;0;0;0;0;.01;0;0;0;0;0;0;0;0;0;0;.3,.5,.8,0"
-                repeatCount="indefinite"
-              />
-            </stop>
-
-            <stop stopColor="rgb(0,0,12)" offset="100%" id="horizon">
-              <animate
-                attributeName="stop-color"
-                dur="24s"
-                values=" #040b3c;#192861;#f06b7e;#f06b7e;#f06b7e;#f06b7e;#f06b7e;#fee154;#efeebc;#74d4cc;#74d4cc;#74d4cc;#74d4cc;#74d4cc;#efeebc;#fee154;#f06b7e;#f06b7e;#f06b7e;#f06b7e;#192861;#040b3c;#040b3c;"
-                repeatCount="indefinite"
-              />
-            </stop>
-          </linearGradient>
-          <rect
-            id="sky"
-            x="0"
-            y="0"
+        <div className="sky">
+          <svg
+            ref={skyRef}
+            xmlns="http://www.w3.org/2000/svg"
             width="100%"
-            height="100%"
-            style={{ fill: "url(#skyGradient)" }}
-          />
-        </svg>
+            height="51vh"
+            id="aero"
+          >
+            <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop stopColor="rgb(0,0,12)" offset="0%" id="zenith">
+                <animate
+                  attributeName="stop-color"
+                  dur="24s"
+                  values="#040b3c;#192861;#f06b7e;#fee154;#fee154;#efeebc;#efeebc;#74d4cc;#74d4cc;#74d4cc;#74d4cc;#efeebc;#fee154;#f06b7e;#5b2c83;#28166b;#192861;#040b3c ;#040b3c"
+                  repeatCount="indefinite"
+                />
+                <animate
+                  attributeName="offset"
+                  dur="24s"
+                  values="0;.85;.6;.1;0;0;0;0;0;.01;0;0;0;0;0;0;0;0;0;0;.3,.5,.8,0"
+                  repeatCount="indefinite"
+                />
+              </stop>
 
-        <svg
-          ref={seaRef}
-          xmlns="http://www.w3.org/2000/svg"
-          width="100%"
-          id="sea"
-          height="50vh"
-        >
-          <linearGradient id="seagrad" x1="50%" y1="50%" x2="0%" y2="50%">
-            <stop stopColor="rgb(0,0,12)" offset="0%" id="zenith">
-              <animate
-                attributeName="stop-color"
-                dur="24s"
-                values="#012459;#003972;#016792;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#016792;#003972;#012459;"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="offset"
-                dur="24s"
-                values="0;.85;.6;.1;0;0;0;0;0;.01;0;0;0;0;0;0;0;0;0;0;.3,.5,.8,0"
-                repeatCount="indefinite"
-              />
-            </stop>
-          </linearGradient>
-          <rect
-            id="sky"
-            x="0"
-            y="0"
+              <stop stopColor="rgb(0,0,12)" offset="100%" id="horizon">
+                <animate
+                  attributeName="stop-color"
+                  dur="24s"
+                  values=" #040b3c;#192861;#f06b7e;#f06b7e;#f06b7e;#f06b7e;#f06b7e;#fee154;#efeebc;#74d4cc;#74d4cc;#74d4cc;#74d4cc;#74d4cc;#efeebc;#fee154;#f06b7e;#f06b7e;#f06b7e;#f06b7e;#192861;#040b3c;#040b3c;"
+                  repeatCount="indefinite"
+                />
+              </stop>
+            </linearGradient>
+            <rect
+              id="sky"
+              x="0"
+              y="0"
+              width="100%"
+              height="100%"
+              style={{ fill: "url(#skyGradient)" }}
+            />
+          </svg>
+        </div>
+        <div className="sea">
+          <svg
+            ref={seaRef}
+            xmlns="http://www.w3.org/2000/svg"
             width="100%"
-            height="100%"
-            style={{ fill: "url(#seagrad)" }}
-          />
-        </svg>
+            id="sea"
+            height="50vh"
+          >
+            <linearGradient id="seagrad" x1="50%" y1="50%" x2="0%" y2="50%">
+              <stop stopColor="rgb(0,0,12)" offset="0%" id="zenith">
+                <animate
+                  attributeName="stop-color"
+                  dur="24s"
+                  values="#003972;#016792;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#016792;#003972;#012459;"
+                  repeatCount="indefinite"
+                />
+                <animate
+                  attributeName="offset"
+                  dur="24s"
+                  values="0;.85;.6;.1;0;0;0;0;0;.01;0;0;0;0;0;0;0;0;0;0;.3,.5,.8,0"
+                  repeatCount="indefinite"
+                />
+              </stop>
+            </linearGradient>
+            <rect
+              id="sky"
+              x="0"
+              y="0"
+              width="100%"
+              height="100%"
+              style={{ fill: "url(#seagrad)" }}
+            />
+          </svg>
+        </div>
 
         <div className="mountain"></div>
         <div className="mountain mountain-2"></div>

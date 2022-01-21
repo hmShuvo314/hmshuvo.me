@@ -14,7 +14,6 @@ const Header = () => {
     navRef.current.classList.toggle("showMenu");
   };
 
-  console.log(isMenuOpen);
   return (
     <HeaderStyles>
       <Tittle />

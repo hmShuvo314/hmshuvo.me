@@ -7,7 +7,7 @@ import {
 
 const Services = () => {
   return (
-    <ServicesStyles className="page">
+    <ServicesStyles onScrollCapture={(e) => console.log(e)} className="page">
       <ServicesTitleStyles>
         <h3>
           My awesome
