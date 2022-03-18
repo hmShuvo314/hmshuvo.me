@@ -55,13 +55,6 @@ const GlobalStyles = createGlobalStyle`
     border-radius: 5rem;
   }
 
-
-  hr {
-    border: 0;
-    height: 8px;
-    background-size: 1500px;
-  }
-
   img {
     max-width: 100%;
   }
@@ -72,27 +65,22 @@ const GlobalStyles = createGlobalStyle`
   height: fit-content;
   width: 100vw;
   display: grid;
-  margin-bottom:  5vmin;
-  &:last-child {
-    margin-bottom:  0;
-
-  }
+  padding: 5vmin 3vmin;
   place-items: center;
     .border-area {
       position: relative;
       height: fit-content;
-      min-height: 90%;
-      width: 90%;
-      min-width: 330px;
+      min-height: 100%;
+      width: 100%;
       border-radius: 1rem;
       display: grid;
-      padding: 5vmin;
-
+      padding: 20vmin 5vmin;
       background: transparent;
       background: linear-gradient(45deg, transparent, 14.1421356237vmin, rgba(255, 255, 255, 0.05) 0);
       box-shadow: 0px 0px 3px 2px rgb(0 0 0 / 10%);
       backdrop-filter: blur(2px);
       clip-path: polygon(-20% -20%, 120% -20%, 120% 120%, 20vmin  100%, 0% calc( 100% - 20vmin));
+      -webkit-clip-path: polygon(-20% -20%, 120% -20%, 120% 120%, 20vmin  100%, 0% calc( 100% - 20vmin));
         &:after {
         position:absolute;
         content: '';
@@ -100,6 +88,7 @@ const GlobalStyles = createGlobalStyle`
         width: 20vmin;
         background: linear-gradient(to right top, #7da9b3 0, #d2f1fb 65%, #025364);
         clip-path: polygon(-50% -50%, 150% 150%, 150% -50%);
+        -webkit-clip-path: polygon(-50% -50%, 150% 150%, 150% -50%);
         border-top-right-radius: 1.5rem;
         box-shadow: 0 0px 15px 4px #112429;
         opacity: .35;
@@ -110,17 +99,33 @@ const GlobalStyles = createGlobalStyle`
 
 }
 
-.image-3d {
+.page-title {
+  display: flex !important;
+  gap: 15vmin 5vmin;
+  justify-content: space-between;
+  align-items: center;
+
+
+  .title {
+    display: grid;
+    justify-items: flex-start;
+    gap: 2vmin;
+    font-size: 7vmin;
+    letter-spacing: 0.3vmin;
+    line-height: 10vmin;
     position: relative;
-    width: 100%;
-    animation: wobble 6s alternate infinite;
-    *{
-      box-shadow: none !important;
-    };
-    .image-wrapper {
-      width: 80%;
-      aspect-ratio: 577/433;
+    p {
+      color: var(--black);
+      color: black;
+      font-size: clamp(16px, 3.5vmin, 3.5vmin);
     }
+  }
+
+  .image-3d {
+    position: relative;
+    animation: wobble 6s alternate infinite;
+    width: 40%;
+    /* aspect-ratio: 577/433; */
 
     @keyframes wobble {
       from {
@@ -131,7 +136,18 @@ const GlobalStyles = createGlobalStyle`
       }
     }
   }
-
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    .image-3d {
+      width: 60%;
+      min-width: 280px;
+    }
+  }
+}
+button {
+  border: none;
+  outline: none;
+}
 
   .btn {
     font-family: "Pacifico", sans-serif;

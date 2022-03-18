@@ -38,10 +38,10 @@ const Services = () => {
     },
   ];
   return (
-    <div className="page">
+    <div className="page" id="services">
       <div className="border-area">
-        <ServicesStyles>
-          <img src={img} />
+        <ServicesStyles className="page-title">
+          <img src={img} className="image-3d" />
           <div className="title">
             <h3 className="gradient">
               My awesome

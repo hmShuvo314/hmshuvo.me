@@ -1,21 +1,26 @@
-import React, { useEffect, useRef, useState } from "react";
-import { HeaderStyles } from "../styles/HeaderStyles";
-import { ImCross, ImMenu } from "react-icons/im";
-import Nav from "./Nav";
-import Tittle from "./Tittle";
-import MenuBar from "./MenuBar";
+import React from "react";
 
 const Header = () => {
-  const menuBarRef = useRef();
-  const navRef = useRef();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const allLinks = ["Home", "Services", "Toolbox", "Project", "About"];
   return (
-    <HeaderStyles>
-      <Tittle />
-      {/* <MenuBar menuBarRef={menuBarRef} /> */}
-      {/* <div className="icon">{isMenuOpen ? <ImCross /> : <ImMenu />}</div> */}
-      <Nav navRef={navRef} />
-    </HeaderStyles>
+    <header>
+      <span className="title">
+        <h1>
+          Shuvo <span>Portfolio</span>
+        </h1>
+      </span>
+      <nav>
+        <ul>
+          {allLinks.map((link, i) => (
+            <li>
+              <a key={i} href={`/#${link.toLowerCase()}`}>
+                <h5>{link}</h5>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
   );
 };
 

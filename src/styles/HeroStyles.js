@@ -3,25 +3,120 @@ import img from "../assets/images/badge.png";
 import bg from "../assets/images/gradient-bg.webp";
 
 export const HeroStyles = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  place-content: center;
-  place-items: center;
-  gap: 15vmin 5vmin;
-  height: 100%;
-
-  height: 100%;
+  height: fit-content;
+  align-items: center;
 
   .badge {
     position: absolute;
     width: 30vmin;
     height: 25vmin;
-    background: url(${img.src}) center no-repeat;
+    background: url(${img}) center no-repeat;
     background-size: contain;
-    bottom: 0%;
-    right: 05%;
+    bottom: 0;
+    right: 0;
+  }
+  header {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    padding: 0 5vmin;
+
+    .title {
+      h1 {
+        font-family: Ubuntu, -Arial, Helvetica, sans-serif;
+        font-size: 4vmin;
+        color: whitesmoke;
+        span {
+          color: rgb(197, 18, 54);
+        }
+      }
+    }
+
+    nav {
+      top: 0%;
+      position: relative;
+      right: 0;
+      width: fit-content;
+      height: 100%;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          font-size: 4.5vmin;
+          display: grid;
+          place-content: center;
+          place-items: center;
+          width: 8.2vmin;
+          height: 8.2vmin;
+          border-radius: 50%;
+          h5 {
+            color: black;
+            font-size: 2vmin;
+            color: white;
+
+            font-family: mako, apple-system, inkMacSystemFont;
+          }
+        }
+      }
+    }
   }
 
+  .page-title .title {
+    display: grid;
+    justify-items: flex-start;
+    gap: 2vmin;
+    position: relative;
+    align-items: center;
+    align-self: center;
+    width: 50%;
+    @media (max-width: 1100px) {
+      width: 100%;
+    }
+    h1 {
+      font-size: 10vmin;
+      letter-spacing: 0.3vmin;
+      span {
+        display: inline-block;
+        background-clip: text;
+        -webkit-background-clip: text;
+        &.hover {
+          color: yellowgreen;
+          animation: animate 0.3s linear infinite;
+          @keyframes animate {
+            0% {
+              transform: scaleY(0.5) rotateZ(10deg);
+            }
+            25% {
+              transform: scaleY(0.5) scaleX(1.5);
+            }
+            50% {
+              transform: scaleY(1) scaleX(1.5);
+            }
+            100% {
+              transform: scale(1) rotateZ(-10deg);
+            }
+          }
+        }
+      }
+    }
+
+    p {
+      font-weight: 200;
+      font-size: clamp(12px, 3.5vmin, 3.5vmin);
+      letter-spacing: 0.3vmin;
+      color: wheat;
+      font-family: Pacifico;
+    }
+
+    .typed {
+      color: rgb(197, 18, 54);
+    }
+  }
   position: relative;
 `;
 
@@ -32,20 +127,21 @@ export const HeroTitleStyles = styled.div`
   position: relative;
   align-items: center;
   align-self: center;
+  width: 50%;
+  @media (max-width: 1100px) {
+    width: 100%;
+  }
   h1 {
-    font-size: 12vmin;
+    font-size: 10vmin;
     letter-spacing: 0.3vmin;
-    /* padding: 2vmin; */
+    font-display: swap;
     span {
       display: inline-block;
-      background: rgba(0, 0, 0, 0.2);
-      /* background: rgba(255, 255, 255, 0.1); */
-      color: transparent;
       background-clip: text;
       -webkit-background-clip: text;
       &.hover {
+        color: yellowgreen;
         animation: animate 0.3s linear infinite;
-
         @keyframes animate {
           0% {
             transform: scaleY(0.5) rotateZ(10deg);
@@ -66,7 +162,7 @@ export const HeroTitleStyles = styled.div`
 
   p {
     font-weight: 200;
-    font-size: 3.5vmin;
+    font-size: clamp(12px, 3.5vmin, 3.5vmin);
     letter-spacing: 0.3vmin;
     color: wheat;
     font-family: Pacifico;
@@ -75,67 +171,4 @@ export const HeroTitleStyles = styled.div`
   .typed {
     color: rgb(197, 18, 54);
   }
-`;
-
-export const HeroRightStyles = styled.div`
-  position: relative;
-  ul {
-    display: grid;
-    gap: 1rem;
-    justify-items: end;
-  }
-  li {
-    padding-top: 0.4rem;
-    width: auto;
-    height: auto;
-    transition: all 0.5s;
-    p {
-      transition: all 0.5s;
-      display: none;
-      opacity: 0;
-    }
-    &:hover {
-      /* border: 2px solid red; */
-      background: white;
-      box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0.5);
-      border-radius: 20vmin;
-      width: 20vmin;
-      height: auto;
-      display: flex;
-      justify-content: space-around;
-      transition: all 0.5s;
-      a {
-        color: black;
-      }
-      p {
-        transition: all 0.5s;
-        opacity: 1;
-        display: block;
-        font-family: mako, -apple-system, BlinkMacSystemFont;
-        font-style: normal;
-        font-size: 2vmin;
-        letter-spacing: 0;
-      }
-    }
-  }
-
-  a {
-    color: var(--grey);
-    font-size: 4.5vmin;
-
-    transition: all 0.3s ease-in-out;
-  }
-  .linkedin :hover {
-    color: #0e76a8;
-    transition: all 0.3s ease-in-out;
-  }
-  .github :hover {
-    color: #171515;
-    transition: all 0.3s ease-in-out;
-  }
-  .twitter :hover {
-    color: #00acee;
-    transition: all 0.3s ease-in-out;
-  }
-  display: grid;
 `;

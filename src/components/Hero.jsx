@@ -1,31 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ReactTyped from "react-typed";
 import img from "../assets/images/Group 1.svg";
 
-import { HeroStyles, HeroTitleStyles } from "../styles/HeroStyles";
+import { HeroStyles } from "../styles/HeroStyles";
 import Header from "./Header";
 import Letter from "./Letter";
 
 const Hero = () => {
-  const [rotate, setRotate] = useState(0);
-  const [myName, _] = useState(["Hy!", "I", "am", "br", "H", "M", "Shuvo"]);
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollLength = window.scrollY % window.innerHeight;
-
-  //     const scrollPercentage = (scrollLength / window.innerHeight) * 100;
-
-  //     const rotateAmount = Math.floor(scrollPercentage);
-  //     setRotate(rotateAmount);
-  //   };
-  //   window.addEventListener("scroll", handleScroll);
-  // }, []);
+  const myName = ["Hy!", "I", "am", "br", "H", "M", "Shuvo"];
 
   return (
     <div className="page">
-      <div className="border-area">
-        <HeroStyles>
-          <HeroTitleStyles>
+      <HeroStyles className="border-area ">
+        <div className="page-title">
+          <div className="title">
             <h1 className="gradient">
               {myName.map((word, idx) =>
                 word === "br" ? (
@@ -54,17 +42,13 @@ const Hero = () => {
             <button class="btn">
               <span>Hire Me !</span>
             </button>
-          </HeroTitleStyles>
-          <div className="image-3d">
-            <div className="image-wrapper">
-              <img src={img} />
-            </div>
           </div>
-          <span className="badge"></span>
+          <img src={img} className="image-3d" />
+        </div>
 
-          <Header />
-        </HeroStyles>
-      </div>
+        <span className="badge"></span>
+        <Header />
+      </HeroStyles>
     </div>
   );
 };
