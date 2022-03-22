@@ -11,14 +11,18 @@ export const ServicesStyles = styled.div`
 `;
 
 export const ServicesDetailsStyles = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   position: relative;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   justify-items: center;
   position: relative;
   gap: 8vmin;
+
+  @media (max-width: 700px) {
+    grid-template-columns: auto;
+  }
   .services_item {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 15px;

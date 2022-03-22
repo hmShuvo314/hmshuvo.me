@@ -13,6 +13,22 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+     /* Scrollbar Styles */
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+    scrollbar-width: thin;
+    scrollbar-color: var(--red) var(--white);
+&::-webkit-scrollbar-track {
+    background: transparent;
+  }
+ &::-webkit-scrollbar-thumb
+ {
+    background-color: var(--red) ;
+    border: none;
+    border-radius: 5rem;
+  }
   }
   html {
 
@@ -114,6 +130,10 @@ const GlobalStyles = createGlobalStyle`
     letter-spacing: 0.3vmin;
     line-height: 10vmin;
     position: relative;
+    width: 50%;
+    @media (max-width: 1100px) {
+      width: 100%;
+    }
     p {
       color: var(--black);
       color: black;
@@ -125,8 +145,6 @@ const GlobalStyles = createGlobalStyle`
     position: relative;
     animation: wobble 6s alternate infinite;
     width: 40%;
-    /* aspect-ratio: 577/433; */
-
     @keyframes wobble {
       from {
         transform: translateY(-50px);

@@ -4,6 +4,7 @@ import about01 from "../assets/images/about1.png";
 import about04 from "../assets/images/about4.png";
 import fast from "../assets/images/fast.png";
 import responsive from "../assets/images/responsive.png";
+import resume from "../assets/resume/hmshuvo_resume.pdf";
 
 import {
   ServicesDetailsStyles,
@@ -51,9 +52,9 @@ const Services = () => {
             <p className="styled">
               I always strive to deliver the best user experience!
             </p>
-            <button className="btn">
+            <a href={resume} download="hmshuvo_resume.pdf" className="btn">
               <span>Resume</span>
-            </button>
+            </a>
           </div>
         </ServicesStyles>
         <ServicesDetailsStyles>

@@ -18,6 +18,8 @@ const Typography = createGlobalStyle`
     font-weight: normal;
     font-family: Pacifico, -apple-system, BlinkMacSystemFont;
     line-height: normal;
+    font-size: clamp(14px, 4vmin, 4vmin);
+      letter-spacing: 0.3vmin;
   }
   h1,h2,h3 {
     &.gradient {
@@ -29,6 +31,7 @@ const Typography = createGlobalStyle`
       -webkit-background-clip: text;
       color: transparent;
       background-size: 65vmax;
+      font-size: 10vmin;
       @keyframes anim {
         from {
           background-position: top left;

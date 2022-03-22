@@ -37,13 +37,28 @@ const BackgroundAnim = () => {
   return (
     <BackgroundAnimStyles>
       <div className="landscape">
-        <svg ref={skyRef} width="100%" height="51vh" id="aero">
+        <svg ref={skyRef} width="100%" height="50vh" id="aero">
           <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop stopColor="rgb(0,0,12)" offset="0%" id="zenith">
               <animate
                 attributeName="stop-color"
                 dur="24s"
-                values="#040b3c;#192861;#f06b7e;#fee154;#fee154;#efeebc;#efeebc;#74d4cc;#74d4cc;#74d4cc;#74d4cc;#efeebc;#fee154;#f06b7e;#5b2c83;#28166b;#192861;#040b3c ;#040b3c"
+                values="
+                #040b3c;
+                #192861;
+                #5b2c83;
+                #f06b7e;
+                #efeebc;
+                #74d4cc;
+                #74d4cc;
+                #74d4cc;
+                #74d4cc;
+                #efeebc;
+                #fee154;
+                #f06b7e;
+                #5b2c83;
+                #192861;
+                #040b3c"
                 repeatCount="indefinite"
               />
               <animate
@@ -58,7 +73,29 @@ const BackgroundAnim = () => {
               <animate
                 attributeName="stop-color"
                 dur="24s"
-                values=" #040b3c;#192861;#f06b7e;#f06b7e;#f06b7e;#f06b7e;#f06b7e;#fee154;#efeebc;#74d4cc;#74d4cc;#74d4cc;#74d4cc;#74d4cc;#efeebc;#fee154;#f06b7e;#f06b7e;#f06b7e;#f06b7e;#192861;#040b3c;#040b3c;"
+                values="
+                #040b3c;
+                #192861;
+                #f06b7e;
+                #f06b7e;
+                #f06b7e;
+                #f06b7e;
+                #fee154;
+                #efeebc;
+                #74d4cc;
+                #74d4cc;
+                #74d4cc;
+                #74d4cc;
+                #74d4cc;
+                #efeebc;
+                #fee154;
+                #f06b7e;
+                #f06b7e;
+                #f06b7e;
+                #f06b7e;
+                #192861;
+                #040b3c;
+                "
                 repeatCount="indefinite"
               />
             </stop>

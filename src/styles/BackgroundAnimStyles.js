@@ -259,7 +259,7 @@ const BackgroundAnimStyles = styled.div`
     width: 20vmin;
     height: 20vmin;
     left: calc(60% - 10vmin);
-    top: 105%;
+    top: 110%;
     transform-origin: center;
     transform: translate3d(0, 0, 0);
     box-shadow: 0 0 20px 8px #fc0;
