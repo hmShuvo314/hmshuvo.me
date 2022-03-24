@@ -2,6 +2,26 @@ import { ProjectStyles } from "../styles/ProjectsStyles";
 import projects from "../assets/images/projects.png";
 
 const Projects = () => {
+  const allProjects = [
+    {
+      name: "Cryptobyte",
+      details:
+        "Cryptobyte is an all-in-one platform to get the most up-to-date information about all the crypto currencies in the world.It helps users to track crypto currencies and make thoughtful decision on whether to invest in them best on their trends.",
+      link: "",
+    },
+    {
+      name: "Typer",
+      details:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, modi eaque quo labore doloribus temporibus? Nisi deleniti quibusdam veritatis amet itaque, ullam libero explicabo voluptatibus voluptatem vel quam magnam id!",
+      link: "",
+    },
+    {
+      name: "Logophilic",
+      details:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, esse. Alias quod id aspernatur aut at, laboriosam ab? Soluta quis eos architecto quaerat praesentium error velit magni earum fuga recusandae.",
+      link: "",
+    },
+  ];
   return (
     <div className="page">
       <ProjectStyles className="border-area">
@@ -17,10 +37,9 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="all-projects">
+        <div className="all-experience">
           <div className="wrapper">
             <div className="item">
-              a{" "}
               <div className="item_title">
                 <a href="https://intercode.vercel.app/" target="_blank">
                   <h1 className="right">InterCode</h1>
@@ -62,6 +81,17 @@ const Projects = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="all-projects">
+          {allProjects.map(({ name, details, link }) => (
+            <div className="project">
+              <a href={link}>
+                <h1>{name}</h1>
+              </a>
+              <p>{details}</p>
+            </div>
+          ))}
         </div>
       </ProjectStyles>
     </div>

@@ -115,7 +115,7 @@ const BackgroundAnim = () => {
               <animate
                 attributeName="stop-color"
                 dur="24s"
-                values="#003972;#016792;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#016792;#003972;#012459;"
+                values="#003972;#016792;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#12a1c0;#016792;#003972;"
                 repeatCount="indefinite"
               />
               <animate
