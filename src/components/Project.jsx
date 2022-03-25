@@ -42,16 +42,16 @@ const Projects = () => {
             <div className="item">
               <div className="item_title">
                 <a href="https://intercode.vercel.app/" target="_blank">
-                  <h1 className="right">InterCode</h1>
+                  <h1 className="right">CodeFiz</h1>
                 </a>
                 <h2>Founder & CEO</h2>
               </div>
               <div className="item_details">
                 <p>
-                  InterCode is a next generation code collaboration tool. It is
-                  free and open source and a perfect choice for college students
-                  and hiring managers alike who can easily and smoothly hold
-                  live coding sessions and coding interviews using the app.
+                  CodeFiz is a next generation code collaboration tool and a
+                  perfect choice for college students and hiring managers alike
+                  who can easily and smoothly hold live coding sessions and
+                  coding interviews using the app.
                 </p>
               </div>
             </div>
