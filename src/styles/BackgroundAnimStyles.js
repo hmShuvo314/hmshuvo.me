@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 const BackgroundAnimStyles = styled.div`
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+
   .sky {
     background: #040b3c;
   }
@@ -608,12 +614,6 @@ const BackgroundAnimStyles = styled.div`
     animation-delay: 6s;
   }
 
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: 0;
-
   .block {
     position: relative;
     height: 100vh;
@@ -623,12 +623,12 @@ const BackgroundAnimStyles = styled.div`
   }
 
   #sea {
-    position: fixed;
     bottom: 0;
     left: 0;
+    width: 100%;
   }
   #aero {
-    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: -1;

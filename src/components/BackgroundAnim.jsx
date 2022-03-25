@@ -37,7 +37,7 @@ const BackgroundAnim = () => {
   return (
     <BackgroundAnimStyles>
       <div className="landscape">
-        <svg ref={skyRef} width="100%" height="50vh" id="aero">
+        <svg ref={skyRef} width="100%" height="51vh" id="aero">
           <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop stopColor="rgb(0,0,12)" offset="0%" id="zenith">
               <animate

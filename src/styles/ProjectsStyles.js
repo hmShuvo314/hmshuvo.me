@@ -17,8 +17,9 @@ export const ProjectStyles = styled.div`
     display: grid;
     place-items: center;
     gap: 100px;
+    width: fit-content;
     .wrapper {
-      height: 250px;
+      height: 260px;
       border: 3px solid aliceblue;
       box-shadow: 8px 8px 0 0 blueviolet, -8px -8px 0 0 cyan;
       width: clamp(250px, 60%, 1200px);
@@ -51,7 +52,7 @@ export const ProjectStyles = styled.div`
 
       .item {
         position: relative;
-        width: clamp(300px, 100%, 1200px);
+        width: clamp(280px, 100%, 1200px);
         border-radius: 3px;
         display: grid;
         justify-items: center;
@@ -110,9 +111,9 @@ export const ProjectStyles = styled.div`
           height: 100%;
           overflow: auto;
           width: 50%;
-          min-width: 300px;
+          min-width: 250px;
           p {
-            font-size: clamp(12px, 2.5vmin, 25px);
+            font-size: clamp(15px, 2.5vmin, 25px);
             text-align: center;
           }
         }
@@ -120,29 +121,31 @@ export const ProjectStyles = styled.div`
     }
   }
   .all-projects {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     place-items: center;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 150px;
+    place-self: center;
+    justify-content: center;
     margin-bottom: 150px;
+    max-width: 1200px;
     .project {
-      width: 300px;
-      height: 300px;
+      width: clamp(230px, 30vmin, 400px);
+      aspect-ratio: 1/1;
       position: relative;
       perspective: 600px;
-      display: grid;
-      place-items: center;
-      place-content: center;
-      grid-template-rows: auto 1fr;
       padding: 10px;
-      background-color: aliceblue;
+      padding-top: 30px;
+      text-align: center;
       border-radius: 50%;
+      background-color: aliceblue;
       h1 {
-        font-size: 5vmin;
+        font-size: clamp(20px, 3.5vmin, 30px);
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
         position: relative;
         overflow: hidden;
         transition: all 0.3s;
+        margin-bottom: 20px;
 
         &:after {
           transition: 0.3s;
@@ -165,13 +168,17 @@ export const ProjectStyles = styled.div`
           }
         }
       }
-      p {
-        font-size: clamp(12px, 2.6vmin, 25px);
-        text-align: center;
-        font-weight: 600;
+      .detail {
         background: rgb(240, 248, 255, 0.2);
-        padding: 10px;
+        padding: 15px;
         border-radius: 5px;
+        overflow: auto;
+        height: 100%;
+        p {
+          font-size: clamp(15px, 1.8vmin, 25px);
+          text-align: center;
+          font-weight: 600;
+        }
       }
 
       &:after {

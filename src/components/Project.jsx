@@ -89,7 +89,9 @@ const Projects = () => {
               <a href={link}>
                 <h1>{name}</h1>
               </a>
-              <p>{details}</p>
+              <div className="detail">
+                <p>{details}</p>
+              </div>
             </div>
           ))}
         </div>

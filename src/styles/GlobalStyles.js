@@ -38,6 +38,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     overflow-x: hidden;
+    width: 100vw;
     cursor: url(${cursor}) , default !important;
   }
 

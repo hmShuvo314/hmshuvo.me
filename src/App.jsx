@@ -1,3 +1,4 @@
+import About from "./components/About";
 import BackgroundAnim from "./components/BackgroundAnim";
 import Hero from "./components/Hero";
 import Projects from "./components/Project";
@@ -17,9 +18,7 @@ const App = () => (
     <ToolBox />
     <Projects />
     <Teaching />
-    <Hero />
-    <Hero />
-    <Hero />
+    <About />
   </>
 );
 

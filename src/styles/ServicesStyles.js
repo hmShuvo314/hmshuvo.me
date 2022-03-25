@@ -15,12 +15,15 @@ export const ServicesDetailsStyles = styled.div`
   grid-template-columns: auto auto;
   position: relative;
   align-items: center;
+  place-self: center;
   justify-content: center;
   justify-items: center;
   position: relative;
   gap: 8vmin;
+  overflow: hidden;
+  max-width: 1200px;
 
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
     grid-template-columns: auto;
   }
   .services_item {
@@ -30,8 +33,8 @@ export const ServicesDetailsStyles = styled.div`
     position: relative;
     display: grid;
     padding: 10px;
-    width: 50vmin;
-    min-width: 280px;
+    width: clamp(280px, 50vmin, 450px);
+
     @media (hover: hover) {
       &:hover {
         transform: scale(0.8) translateY(10%);
