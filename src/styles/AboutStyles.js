@@ -18,11 +18,11 @@ export const AboutStyles = styled.div`
 
   .title {
     p {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: normal;
-      color: aliceblue;
+      /* font-family: Arial, Helvetica, sans-serif; */
+      /* line-height: normal; */
+      /* color: aliceblue; */
       text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-      font-size: clamp(12px, 3vmin, 25px);
+      /* font-size: clamp(12px, 3vmin, 25px); */
     }
   }
 `;

@@ -553,6 +553,19 @@ const BackgroundAnimStyles = styled.div`
     -webkit-animation: splash 9s infinite;
     animation: splash 9s infinite;
     transform: scale(0);
+
+    &.splash-6 {
+      top: 55%;
+      left: 80%;
+      height: 8vmin;
+      width: 25vmin;
+    }
+    &.splash-7 {
+      height: 10vmin;
+      width: 30vmin;
+      top: 60%;
+      left: 30%;
+    }
   }
 
   .splash-stone {
@@ -569,17 +582,12 @@ const BackgroundAnimStyles = styled.div`
     right: -2vmin;
   }
 
-  @-webkit-keyframes splash {
-    50%,
-    100% {
-      transform: scale(1);
-      opacity: 0;
-    }
-  }
-
   @keyframes splash {
-    50%,
-    100% {
+    from {
+      transform: scale(0);
+      opacity: 1;
+    }
+    to {
       transform: scale(1);
       opacity: 0;
     }

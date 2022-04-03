@@ -14,12 +14,15 @@ const Typography = createGlobalStyle`
   }
 
   p.styled {
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: normal;
-    font-family: Pacifico, -apple-system, BlinkMacSystemFont;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont;
+    font-family: "Lobster", cursive;
     line-height: normal;
     font-size: clamp(14px, 4vmin, 4vmin);
-      letter-spacing: 0.3vmin;
+    letter-spacing: 0.3vmin;
+    color: wheat !important;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
   }
   h1,h2,h3 {
     &.gradient {

@@ -142,9 +142,7 @@ const BackgroundAnim = () => {
         <div className="sun-container sun-container-1"></div>
         <div className="sun-container">
           <div
-            style={{
-              transform: `translateY(-${sunRiseHeight}px)`,
-            }}
+            style={{ transform: `translateY(-${sunRiseHeight}px)` }}
             className="sun"
           ></div>
         </div>
@@ -168,6 +166,8 @@ const BackgroundAnim = () => {
         <div className="splash splash-stone delay-3"></div>
         <div className="splash splash-stone splash-4"></div>
         <div className="splash splash-stone splash-5"></div>
+        <div className="splash  splash-6"></div>
+        <div className="splash  splash-7"></div>
         <div className="lotus lotus-1"></div>
         <div className="lotus lotus-2"></div>
         <div className="lotus lotus-3"></div>

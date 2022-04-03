@@ -4,7 +4,7 @@ import about01 from "../assets/images/about1.png";
 import about04 from "../assets/images/about4.png";
 import fast from "../assets/images/fast.png";
 import responsive from "../assets/images/responsive.png";
-import resume from "../assets/resume/hmshuvo_resume.pdf";
+import resume from "../assets/resume/myresume.pdf";
 
 import {
   ServicesDetailsStyles,

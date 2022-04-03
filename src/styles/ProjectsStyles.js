@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectStyles = styled.div`
-  gap: 150px;
+  gap: 250px;
   .title {
     h1 {
       font-size: 10vmin;
@@ -56,9 +56,10 @@ export const ProjectStyles = styled.div`
         border-radius: 3px;
         display: grid;
         justify-items: center;
-        align-content: space-between;
+        align-content: center;
         gap: 10px;
-        padding: 20px;
+        padding: 20px 0;
+
         transform: rotateY(-35deg) translateX(10%);
         transform-origin: center;
         overflow: hidden;
@@ -85,7 +86,7 @@ export const ProjectStyles = styled.div`
               border-radius: 5px;
               bottom: 0;
               left: 0;
-              background: teal;
+              background: darkblue;
               transform: translateX(-100%);
             }
 
@@ -113,83 +114,110 @@ export const ProjectStyles = styled.div`
           width: 50%;
           min-width: 250px;
           p {
-            font-size: clamp(15px, 2.5vmin, 25px);
+            font-size: clamp(15px, 2.5vmin, 20px);
             text-align: center;
           }
         }
       }
     }
   }
+
   .all-projects {
     display: flex;
     flex-wrap: wrap;
     place-items: center;
-    gap: 150px;
+    gap: 200px;
     place-self: center;
     justify-content: center;
     margin-bottom: 150px;
     max-width: 1200px;
     .project {
-      width: clamp(230px, 30vmin, 400px);
-      aspect-ratio: 1/1;
+      width: clamp(230px, 30vmin, 260px);
+      aspect-ratio: 3/4;
       position: relative;
       perspective: 600px;
-      padding: 10px;
       padding-top: 30px;
-      text-align: center;
-      border-radius: 50%;
-      background-color: aliceblue;
-      h1 {
-        font-size: clamp(20px, 3.5vmin, 30px);
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+      .wrapper1 {
+        padding: 10px;
         position: relative;
-        overflow: hidden;
-        transition: all 0.3s;
-        margin-bottom: 20px;
+        border-radius: 20px;
+        background: rgb(255, 255, 255, 0.5);
+        box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+        gap: 10px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
 
-        &:after {
-          transition: 0.3s;
-          position: absolute;
-          content: "";
-          width: 100%;
-          height: 2px;
-          border-radius: 5px;
-          bottom: 0;
-          left: 0;
-          background: teal;
-          transform: scaleX(0);
-          transform-origin: center;
+        h1 {
+          font-size: clamp(20px, 3.5vmin, 30px);
+          text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+          position: relative;
+          overflow: hidden;
+          transition: all 0.3s;
+          width: max-content;
+          padding-bottom: 5px;
+
+          &:after {
+            transition: 0.3s;
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            border-radius: 5px;
+            bottom: 0;
+            left: 0;
+            background: darkblue;
+            transform: scaleX(0);
+            transform-origin: center;
+          }
+          &:hover {
+            transform: scale(1.1);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            &:after {
+              transform: scaleX(1);
+            }
+          }
         }
-        &:hover {
-          transform: scale(1.1);
-          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-          &:afer {
-            transform: scaleX(1);
+        .detail {
+          padding: 15px;
+          border-radius: 5px;
+          /* overflow: hidden; */
+
+          height: 100%;
+          overflow: auto;
+          p {
+            font-size: clamp(15px, 1.8vmin, 25px);
+            text-align: center;
+            font-weight: 600;
+          }
+        }
+        .links {
+          display: flex;
+          gap: 30px;
+          font-size: 25px;
+          a {
+            transition: 0.3s;
+
+            &:hover {
+              transform: scale(1.3);
+            }
           }
         }
       }
-      .detail {
-        background: rgb(240, 248, 255, 0.2);
-        padding: 15px;
-        border-radius: 5px;
-        overflow: auto;
-        height: 100%;
-        p {
-          font-size: clamp(15px, 1.8vmin, 25px);
-          text-align: center;
-          font-weight: 600;
-        }
-      }
-
       &:after {
         content: "";
         position: absolute;
         width: 100%;
         height: 100%;
-        border-radius: 100% 5% 5% 5% / 100% 5% 5% 5%;
-        background-color: blueviolet;
-        right: -10%;
-        bottom: -10%;
+        border-radius: 100% 10% 10% 10% / 100% 10% 10% 10%;
+        background-color: transparent;
+        border: 20px solid blueviolet;
+        right: -15%;
+        bottom: -15%;
         transform-origin: center;
         transform: rotate3d(0.5, -0.5, 0, 60deg);
         z-index: -1;
@@ -202,10 +230,11 @@ export const ProjectStyles = styled.div`
         position: absolute;
         width: 100%;
         height: 100%;
-        border-radius: 5% 5% 100% 5% / 5% 5% 100% 5%;
-        background-color: cyan;
-        left: -10%;
-        top: -10%;
+        border-radius: 10% 10% 100% 10% / 10% 10% 100% 10%;
+        background-color: transparent;
+        border: 20px solid cyan;
+        left: -15%;
+        top: -15%;
       }
     }
   }

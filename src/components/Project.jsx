@@ -1,3 +1,5 @@
+import { HiExternalLink } from "react-icons/hi";
+import { BsGithub } from "react-icons/bs";
 import { ProjectStyles } from "../styles/ProjectsStyles";
 import projects from "../assets/images/projects.png";
 
@@ -7,19 +9,50 @@ const Projects = () => {
       name: "Cryptobyte",
       details:
         "Cryptobyte is an all-in-one platform to get the most up-to-date information about all the crypto currencies in the world.It helps users to track crypto currencies and make thoughtful decision on whether to invest in them best on their trends.",
-      link: "",
+      link: "https://cryptobyte.shuvo.codes/",
+      github: "https://github.com/hmShuvo314/Cryptobyte",
+    },
+    {
+      name: "Nick | Chatbot",
+      details:
+        "Nick is an AI chatbot that uses machine learning model to answer customer queries. It is built using Python 3, Pytorch, and has been integrated to a Flask server to handle incoming query request",
+      link: "https://www.weekendtrendz.com/chat",
+      github: "https://github.com/hmShuvo314/chatbot-py",
     },
     {
       name: "Typer",
       details:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, modi eaque quo labore doloribus temporibus? Nisi deleniti quibusdam veritatis amet itaque, ullam libero explicabo voluptatibus voluptatem vel quam magnam id!",
-      link: "",
+        "Typer is a minimalist app for practicing typing. Users can practice their typing speed and accuracy and get the results accordingly",
+      link: "typer.shuvo.codes",
+      github: "https://github.com/hmShuvo314/typer",
     },
     {
       name: "Logophilic",
       details:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, esse. Alias quod id aspernatur aut at, laboriosam ab? Soluta quis eos architecto quaerat praesentium error velit magni earum fuga recusandae.",
-      link: "",
+        "Logophilic is a vocabulary game. Users have to fill in the blanks of a particular word correctly to get a point. To answer each of the word correctly, there are 15 seconds allocated. ",
+      link: "logophiles.shuvo.codes",
+      github: "https://github.com/hmShuvo314/logophiles",
+    },
+    {
+      name: "Pong",
+      details:
+        "It is a browser based pong game. The user can play against the computer and each time the computer misses the ball, the user gets one point and vice versa.",
+      link: "pong.shuvo.codes",
+      github: "https://github.com/hmShuvo314/pong",
+    },
+    {
+      name: "Whack A Mole",
+      details:
+        "It is a browser based whack a mole game. Each time the user manages to hit a mole, he receives one point. There is a total of 20 seconds allocated and after that the game is over.",
+      link: "mole.shuvo.codes",
+      github: "https://github.com/hmShuvo314/whack-a-mole",
+    },
+    {
+      name: "HTTP server in GO",
+      details:
+        "This http server is written entirely in go and uses the Gin backend framework to handle incoming request and respond to them accrodingly. It's capable of doing all sort of CRUD operation",
+      link: "https://github.com/hmShuvo314/GO_api",
+      github: "https://github.com/hmShuvo314/GO_api",
     },
   ];
   return (
@@ -41,7 +74,7 @@ const Projects = () => {
           <div className="wrapper">
             <div className="item">
               <div className="item_title">
-                <a href="https://intercode.vercel.app/" target="_blank">
+                <a href="https://codefiz.com/" target="_blank">
                   <h1 className="right">CodeFiz</h1>
                 </a>
                 <h2>Founder & CEO</h2>
@@ -84,13 +117,22 @@ const Projects = () => {
         </div>
 
         <div className="all-projects">
-          {allProjects.map(({ name, details, link }) => (
+          {allProjects.map(({ name, details, link, github }) => (
             <div className="project">
-              <a href={link}>
+              <div className="wrapper1">
                 <h1>{name}</h1>
-              </a>
-              <div className="detail">
-                <p>{details}</p>
+                <div className="detail">
+                  <p>{details}</p>
+                </div>
+
+                <div className="links">
+                  <a href={github} target="_blank">
+                    <BsGithub />
+                  </a>
+                  <a href={link} target="_blank">
+                    <HiExternalLink />
+                  </a>
+                </div>
               </div>
             </div>
           ))}
