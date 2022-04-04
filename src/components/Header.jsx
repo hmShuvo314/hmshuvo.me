@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 const Header = () => {
   const allLinks = ["Services", "Toolbox", "Projects", "Contact"];
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   return (
     <header>
       <span className="title">

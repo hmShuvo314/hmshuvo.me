@@ -22,7 +22,7 @@ export const ToolBoxStyles = styled.div`
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
       button {
         background: rgba(255, 255, 255, 0.2);
-        font-size: 20px;
+        font-size: 18px;
         padding: 15px;
         &.current {
           background: rgba(255, 255, 255, 0.5);
@@ -133,6 +133,7 @@ export const ToolBoxStyles = styled.div`
       top: 110%;
       h4 {
         font-size: 15px;
+        font-weight: 600;
         width: max-content;
       }
     }

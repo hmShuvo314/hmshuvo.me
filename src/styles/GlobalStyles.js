@@ -13,8 +13,6 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
-     /* Scrollbar Styles */
   &::-webkit-scrollbar {
     width: 3px;
   }
@@ -82,8 +80,9 @@ const GlobalStyles = createGlobalStyle`
   height: fit-content;
   width: 100vw;
   display: grid;
-  padding: 5vmin 3vmin;
+  padding: 5vmin 2vmin;
   place-items: center;
+  overflow-x: hidden;
     .border-area {
       position: relative;
       height: fit-content;
@@ -91,7 +90,7 @@ const GlobalStyles = createGlobalStyle`
       width: 100%;
       border-radius: 1rem;
       display: grid;
-      padding: 20vmin 5vmin;
+      padding: 20vmin 4vmin;
       background: transparent;
       background: linear-gradient(45deg, transparent, 14.1421356237vmin, rgba(255, 255, 255, 0.05) 0);
       box-shadow: 0px 0px 3px 2px rgb(0 0 0 / 10%);
@@ -118,7 +117,7 @@ const GlobalStyles = createGlobalStyle`
 
 .page-title {
   display: flex !important;
-  gap: 15vmin 5vmin;
+  gap: 100px 5vmin;
   justify-content: space-between;
   align-items: center;
 

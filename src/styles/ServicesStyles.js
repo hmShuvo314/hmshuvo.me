@@ -63,7 +63,7 @@ export const ServicesDetailsStyles = styled.div`
       gap: 20px;
       p {
         font-size: 1em;
-        font-family: Mako;
+        font-family: "Open Sans";
       }
       h3 {
         font-size: 1.2em;

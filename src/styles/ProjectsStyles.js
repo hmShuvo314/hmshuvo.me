@@ -22,7 +22,7 @@ export const ProjectStyles = styled.div`
       height: 260px;
       border: 3px solid aliceblue;
       box-shadow: 8px 8px 0 0 blueviolet, -8px -8px 0 0 cyan;
-      width: clamp(250px, 60%, 1200px);
+      width: clamp(240px, 60%, 1200px);
       display: grid;
       place-items: center;
       perspective: 1000px;
@@ -52,7 +52,7 @@ export const ProjectStyles = styled.div`
 
       .item {
         position: relative;
-        width: clamp(280px, 100%, 1200px);
+        width: clamp(270px, 100%, 1200px);
         border-radius: 3px;
         display: grid;
         justify-items: center;
@@ -112,7 +112,7 @@ export const ProjectStyles = styled.div`
           height: 100%;
           overflow: auto;
           width: 50%;
-          min-width: 250px;
+          min-width: 240px;
           p {
             font-size: clamp(15px, 2.5vmin, 20px);
             text-align: center;
@@ -132,7 +132,7 @@ export const ProjectStyles = styled.div`
     margin-bottom: 150px;
     max-width: 1200px;
     .project {
-      width: clamp(230px, 30vmin, 260px);
+      width: clamp(220px, 30vmin, 260px);
       aspect-ratio: 3/4;
       position: relative;
       perspective: 600px;
@@ -185,14 +185,12 @@ export const ProjectStyles = styled.div`
         .detail {
           padding: 15px;
           border-radius: 5px;
-          /* overflow: hidden; */
-
           height: 100%;
           overflow: auto;
           p {
             font-size: clamp(15px, 1.8vmin, 25px);
             text-align: center;
-            font-weight: 600;
+            font-weight: normal;
           }
         }
         .links {
