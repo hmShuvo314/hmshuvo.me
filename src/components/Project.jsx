@@ -16,7 +16,7 @@ const Projects = () => {
       name: "Nick | Chatbot",
       details:
         "Nick is an AI chatbot that uses machine learning model to answer customer queries. It is built using Python 3, Pytorch, and has been integrated to a Flask server to handle incoming query request",
-      link: "https://www.weekendtrendz.com/chat",
+      link: "https://www.weekendtrendz.com/#chat",
       github: "https://github.com/hmShuvo314/chatbot-py",
     },
     {
