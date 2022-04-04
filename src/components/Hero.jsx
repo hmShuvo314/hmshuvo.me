@@ -27,11 +27,11 @@ const Hero = () => {
                 )
               )}
             </h1>
-            <p>
+            <p className="styled">
               I make websites that are{" "}
               <span className="typed">
                 <ReactTyped
-                  strings={["Blazing Fast ⚡", "Secured 🔐", "Cool 😍"]}
+                  strings={["Fast ⚡", "Secured 🔐", "Cool 😍"]}
                   typeSpeed={100}
                   backSpeed={40}
                   loop={true}
@@ -39,9 +39,9 @@ const Hero = () => {
               </span>
             </p>
 
-            <button class="btn">
+            <a href="#contact" class="btn">
               <span>Hire Me !</span>
-            </button>
+            </a>
           </div>
           <img src={img} className="image-3d" />
         </div>

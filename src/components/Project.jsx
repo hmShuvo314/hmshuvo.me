@@ -23,28 +23,28 @@ const Projects = () => {
       name: "Typer",
       details:
         "Typer is a minimalist app for practicing typing. Users can practice their typing speed and accuracy and get the results accordingly",
-      link: "typer.shuvo.codes",
+      link: "https://typer.shuvo.codes",
       github: "https://github.com/hmShuvo314/typer",
     },
     {
-      name: "Logophilic",
+      name: "Logophiles",
       details:
-        "Logophilic is a vocabulary game. Users have to fill in the blanks of a particular word correctly to get a point. To answer each of the word correctly, there are 15 seconds allocated. ",
-      link: "logophiles.shuvo.codes",
+        "Logophiles is a vocabulary game. Users have to fill in the blanks of a particular word correctly to get a point. To answer each of the word correctly, there are 15 seconds allocated. ",
+      link: "https://logophiles.shuvo.codes",
       github: "https://github.com/hmShuvo314/logophiles",
     },
     {
       name: "Pong",
       details:
         "It is a browser based pong game. The user can play against the computer and each time the computer misses the ball, the user gets one point and vice versa.",
-      link: "pong.shuvo.codes",
+      link: "https://pong.shuvo.codes",
       github: "https://github.com/hmShuvo314/pong",
     },
     {
       name: "Whack A Mole",
       details:
         "It is a browser based whack a mole game. Each time the user manages to hit a mole, he receives one point. There is a total of 20 seconds allocated and after that the game is over.",
-      link: "mole.shuvo.codes",
+      link: "https://mole.shuvo.codes",
       github: "https://github.com/hmShuvo314/whack-a-mole",
     },
     {
@@ -56,7 +56,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="page">
+    <div className="page" id="projects">
       <ProjectStyles className="border-area">
         <div className="page-title">
           <img src={projects} alt="" className="image-3d" />

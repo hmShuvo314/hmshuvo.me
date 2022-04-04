@@ -1,7 +1,8 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 const Header = () => {
-  const allLinks = ["Home", "Services", "Toolbox", "Project", "About"];
+  const allLinks = ["Services", "Toolbox", "Projects", "Contact"];
+  const [toggle, setToggle] = useState(true);
   return (
     <header>
       <span className="title">
@@ -10,7 +11,10 @@ const Header = () => {
         </h1>
       </span>
       <nav>
-        <ul>
+        <button className="menu">
+          <GiHamburgerMenu onClick={() => setToggle((prev) => !prev)} />
+        </button>
+        <ul className={toggle ? "open" : ""}>
           {allLinks.map((link, i) => (
             <li>
               <a key={i} href={`/#${link.toLowerCase()}`}>

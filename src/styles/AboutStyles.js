@@ -1,28 +1,61 @@
 import styled from "styled-components";
 export const AboutStyles = styled.div`
-  .image-3d {
-    place-items: center;
-    display: grid;
-    border: 2px solid aliceblue;
-    box-shadow: 12px 12px 5px 0 blueviolet, -12px -12px 5px 0 cyan;
-    border-radius: 10px;
-    perspective: 600px;
-    width: fit-content;
-    padding: 50px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  gap: 60px;
 
-    img {
-      border-radius: 10px;
-      transform: rotateY(20deg);
+  .title {
+    display: grid;
+    gap: 50px;
+    justify-content: center;
+    p {
+      padding: 0 5vmin;
     }
   }
 
-  .title {
-    p {
-      /* font-family: Arial, Helvetica, sans-serif; */
-      /* line-height: normal; */
-      /* color: aliceblue; */
-      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-      /* font-size: clamp(12px, 3vmin, 25px); */
+  a {
+    position: relative;
+    span {
+      padding: 15px 20px;
+    }
+    .link {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 15px;
+      color: aliceblue;
+      top: -120%;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.4s;
+      font-family: "Open Sans";
+      font-weight: normal;
+    }
+    &:hover {
+      .link {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  .contacts {
+    display: flex;
+    flex: wrap;
+    gap: 100px;
+    position: relative;
+
+    .contact {
+      display: grid;
+      position: relative;
+      justify-content: center;
+      justify-items: center;
+      .icon {
+        font-size: 50px;
+      }
     }
   }
 `;

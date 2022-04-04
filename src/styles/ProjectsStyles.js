@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectStyles = styled.div`
-  gap: 250px;
+  gap: 150px;
   .title {
     h1 {
       font-size: 10vmin;

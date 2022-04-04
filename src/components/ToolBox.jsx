@@ -57,13 +57,11 @@ const ToolBox = () => {
   const [displayTools, setDisplayTools] = useState("Frontend");
 
   return (
-    <div className="page" id="Toolbox">
+    <div className="page" id="toolbox">
       <ToolBoxStyles className="border-area">
         <div className="page-title">
           <div className="title">
-            <h3 className="gradient">
-              What's in my <br /> toolbox ?!
-            </h3>
+            <h3 className="gradient">What's in my toolbox</h3>
             <p className="styled">
               Some of the awesome technologies I love to work with
             </p>

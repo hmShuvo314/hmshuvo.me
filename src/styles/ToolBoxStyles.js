@@ -10,7 +10,7 @@ export const ToolBoxStyles = styled.div`
     justify-content: center;
     align-items: center;
     grid-template-columns: auto 1fr;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     width: clamp(280px, 70%, 1200px);
     overflow: hidden;
@@ -21,25 +21,25 @@ export const ToolBoxStyles = styled.div`
       grid-template-rows: repeat(3, 1fr);
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
       button {
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.2);
         font-size: 20px;
         padding: 15px;
         &.current {
-          background: rgba(255, 255, 255, 0.2);
+          background: rgba(255, 255, 255, 0.5);
         }
       }
     }
     .tools-list {
       backdrop-filter: blur(10px);
       height: 100%;
-      padding: 10vmin 5vmin;
+      padding: 15vmin 5vmin;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       gap: 15vmin 10vmin;
     }
-    @media (max-width: 800px) {
+    @media (max-width: 1200px) {
       grid-template-columns: none;
       grid-template-rows: auto 1fr;
       .tools-nav {
@@ -89,7 +89,6 @@ export const ToolBoxStyles = styled.div`
         z-index: 20;
         z-index: 4;
         border-radius: 5px;
-        /* box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.3); */
         object-fit: cover;
       }
       &:after {
@@ -133,7 +132,8 @@ export const ToolBoxStyles = styled.div`
       position: absolute;
       top: 110%;
       h4 {
-        font-size: 16px;
+        font-size: 15px;
+        width: max-content;
       }
     }
   }

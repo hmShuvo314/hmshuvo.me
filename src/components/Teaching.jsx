@@ -1,5 +1,4 @@
 import teach1 from "../assets/images/teach1.png";
-import teach2 from "../assets/images/teach2.png";
 
 const Teaching = () => {
   return (
@@ -14,10 +13,9 @@ const Teaching = () => {
               I love to share my web development knowledge and experience with
               others. To me, teaching is just another form of learning!
             </p>
-            {/* <p>
-              Wanna book a one-to-one class with me? <br />
-              <a href="#about">Contact here!</a>
-            </p> */}
+            <a href="#contact" className="btn">
+              <span>Book A Class</span>
+            </a>
           </div>
           <img src={teach1} alt="" className="image-3d" />
         </div>

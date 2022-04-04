@@ -132,6 +132,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 10vmin;
     position: relative;
     width: 50%;
+    gap: 30px;
     @media (max-width: 1100px) {
       width: 100%;
     }
@@ -168,8 +169,10 @@ button {
   outline: none;
 }
 
+
+
   .btn {
-    font-family: "Pacifico", sans-serif;
+    font-family: "Lobster", cursive;
     background: transparent;
     outline: none !important;
     cursor: pointer;
@@ -180,15 +183,15 @@ button {
     border: none;
     color: #f8d47d;
     letter-spacing: 0.2vmin;
-    font-size: 3.5vmin;
+    font-size: clamp(20px, 3.5vmin,3.5vmin);
     font-weight: 700;
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: fit-content;
   }
   .btn span {
-    padding: .5vmin 3vmin;
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
+    padding: 5px 20px;
   }
   .btn:before,
   .btn:after {
@@ -236,6 +239,7 @@ button {
   .btn span:hover:after {
     width: 100%;
   }
+
 
 
 `;
