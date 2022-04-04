@@ -123,6 +123,7 @@ export const HeroStyles = styled.div`
     align-items: center;
     align-self: center;
     width: 50%;
+    margin: 70px 0 auto 0;
     @media (max-width: 1100px) {
       width: 100%;
     }
