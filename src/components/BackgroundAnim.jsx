@@ -33,13 +33,13 @@ const BackgroundAnim = () => {
     return () => {
       window.removeEventListener("scroll", rise);
     };
-  }, []);
+  }, [skyRef.current, seaRef.current]);
   return (
     <BackgroundAnimStyles>
       <div className="landscape">
         <svg ref={skyRef} width="100%" height="51vh" id="aero">
           <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop stopColor="rgb(0,0,12)" offset="0%" id="zenith">
+            <stop stopColor="#040b3c" offset="0%" id="zenith">
               <animate
                 attributeName="stop-color"
                 dur="24s"
@@ -69,7 +69,7 @@ const BackgroundAnim = () => {
               />
             </stop>
 
-            <stop stopColor="rgb(0,0,12)" offset="100%" id="horizon">
+            <stop stopColor="#040b3c" offset="100%" id="horizon">
               <animate
                 attributeName="stop-color"
                 dur="24s"
@@ -111,7 +111,7 @@ const BackgroundAnim = () => {
         </svg>
         <svg ref={seaRef} width="100%" id="sea" height="50vh">
           <linearGradient id="seagrad" x1="50%" y1="50%" x2="0%" y2="50%">
-            <stop stopColor="rgb(0,0,12)" offset="0%" id="zenith">
+            <stop stopColor="#003972" offset="0%" id="zenith">
               <animate
                 attributeName="stop-color"
                 dur="24s"
