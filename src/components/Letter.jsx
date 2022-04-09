@@ -1,26 +1,17 @@
 import React, { useEffect, useState } from "react";
 
 const Letter = ({ letter, idx }) => {
-  const [hover, sethover] = useState(false);
+  const [hover, setHover] = useState(false);
 
-  useEffect(() => {
-    const timeDelay = idx * 100 + Math.floor(Math.random() * 900 + 300);
-    handleHover(timeDelay);
-  }, []);
-
-  const handleHover = (ms) => {
+  const handleHover = () => {
     if (hover) return;
-    sethover(true);
-    setTimeout(() => {
-      sethover(false);
-    }, ms);
+    setHover(true);
+
+    setTimeout(() => setHover(false), 600);
   };
 
   return (
-    <span
-      onMouseEnter={() => handleHover(600)}
-      className={hover ? "hover" : ""}
-    >
+    <span onMouseEnter={handleHover} className={hover ? "hover" : ""}>
       {letter}
     </span>
   );

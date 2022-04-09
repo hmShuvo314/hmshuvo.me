@@ -21,7 +21,7 @@ const Hero = () => {
                 ) : (
                   <>
                     {word.split("").map((letter) => (
-                      <Letter letter={letter} idx={idx} />
+                      <Letter letter={letter} />
                     ))}{" "}
                   </>
                 )
