@@ -26,6 +26,7 @@ const Typography = createGlobalStyle`
     &.gradient {
       font-family: "Fattern", Arial, Helvetica, sans-serif !important;
       position: relative;
+      background-color: #fda912;
       background: url(${bg});
       animation: anim 12s alternate infinite;
       background-clip: text;

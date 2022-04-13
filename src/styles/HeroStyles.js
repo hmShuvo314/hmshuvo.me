@@ -135,7 +135,7 @@ export const HeroStyles = styled.div`
         background-clip: text;
         -webkit-background-clip: text;
         &.hover {
-          color: yellowgreen;
+          color: #fda912;
           animation: animate 0.3s linear infinite;
           @keyframes animate {
             0% {
