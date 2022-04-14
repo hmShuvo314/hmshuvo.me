@@ -64,8 +64,8 @@ const Projects = () => {
             <h1 className="gradient">My work experiences!</h1>
 
             <p className="styled">
-              I started web development in early 2020 and by now I have over 8
-              months of professional experience as a full stack web developer
+              I started web development in early 2020 and by now I have almost a
+              year of professional experience as a full stack web developer
             </p>
           </div>
         </div>
