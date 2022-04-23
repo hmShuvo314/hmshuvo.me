@@ -26,12 +26,11 @@ const Typography = createGlobalStyle`
     &.gradient {
       font-family: "Fattern", Arial, Helvetica, sans-serif !important;
       position: relative;
-      background-color: #fda912;
       background: url(${bg}), #fda912;
       animation: anim 12s alternate infinite;
       background-clip: text;
       -webkit-background-clip: text;
-      color: rgba(255, 255, 255, 0.15);
+      color: transparent;
       background-size: 65vmax;
       font-size: 10vmin;
       @keyframes anim {
