@@ -21,11 +21,11 @@ export const ToolBoxStyles = styled.div`
       grid-template-rows: repeat(3, 1fr);
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
       button {
-        background: rgba(255, 255, 255, 0.2);
         font-size: 18px;
+        background: rgba(255, 255, 255, 0.8);
         padding: 15px;
         &.current {
-          background: rgba(255, 255, 255, 0.5);
+          background: rgba(255, 255, 255, 0.2);
         }
       }
     }

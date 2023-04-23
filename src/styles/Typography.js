@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import bg from "../assets/images/gradient-bg.webp";
 import font from "../assets/fonts/Fattern.otf";
+import bg from "../assets/images/gradient-bg.webp";
 
 const Typography = createGlobalStyle`
   @font-face {
@@ -9,13 +9,13 @@ const Typography = createGlobalStyle`
     font-display: swap;
   }
   html {
-    font-family: Mako,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Inter", sans-serif !important;
     color: var(--black);
   }
 
   p.styled {
     font-weight: normal;
-    font-family: "Lobster", cursive;
+    font-family: "Lobster", cursive !important;
     line-height: normal;
     font-size: clamp(18px, 4vmin, 4vmin) !important;
     letter-spacing: 0.3vmin;

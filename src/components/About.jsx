@@ -1,29 +1,29 @@
-import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { AboutStyles } from "../styles/AboutStyles";
 
+const contacts = [
+  {
+    Icon: BsLinkedin,
+    link: "https://www.linkedin.com/in/hmshuvo314/",
+    color: "#00a9ff",
+  },
+  {
+    Icon: BsGithub,
+    link: "https://github.com/hmShuvo314",
+    color: "#000000",
+  },
+];
+
 const About = () => {
-  const contacts = [
-    {
-      Icon: BsLinkedin,
-      link: "https://www.linkedin.com/in/hmshuvo314/",
-      color: "#00a9ff",
-    },
-    {
-      Icon: BsGithub,
-      link: "https://github.com/hmShuvo314",
-      color: "#000000",
-    },
-  ];
   return (
     <div className="page" id="contact">
       <AboutStyles className="border-area">
         <div className="title">
           <h3 className="gradient">Contact Me</h3>
           <p className="styled">
-            I am open to any full time, part time job or freelance projects
-            where I will be able to put my skills in practice and acquire more
-            skills along the way!
+            I am open to full-time Full-Stack Software Engineer role where I
+            will be able to put my skills in practice and acquire more skills
+            along the way!
           </p>
         </div>
 
