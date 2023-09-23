@@ -95,7 +95,7 @@ const Projects = () => {
           <div className="wrapper">
             <div className="item reverse">
               <div className="item_title">
-                <a href="https://codefiz.com/" target="_blank">
+                <a href="https://possier.com/" target="_blank">
                   <h1 className="right">Possier</h1>
                 </a>
                 <h2 className="text-2xl">Software Engineer</h2>
