@@ -74,6 +74,25 @@ const Projects = () => {
 
         <div className="all-experience">
           <div className="wrapper">
+            <div className="item">
+              <div className="item_title">
+                <a href="#" target="_blank">
+                  <h1 className="right">Dynt</h1>
+                </a>
+                <h2 className="text-2xl">Software Engineer</h2>
+              </div>
+              <div className="item_details">
+                <p>
+                  Leading the development of Dynt s open banking integration and
+                  finance and expense management solutionsd
+                </p>
+              </div>
+            </div>
+            <div className="timeline left">
+              <h6>June 2023 - Present</h6>
+            </div>
+          </div>
+          <div className="wrapper">
             <div className="item reverse">
               <div className="item_title">
                 <a href="https://codefiz.com/" target="_blank">
@@ -91,7 +110,7 @@ const Projects = () => {
               </div>
             </div>
             <div className="timeline right">
-              <h6>April 2022 - Present</h6>
+              <h6>April 2022 - May 2023</h6>
             </div>
           </div>
           <div className="wrapper">
@@ -118,7 +137,7 @@ const Projects = () => {
 
           <div className="wrapper">
             <div className="timeline right">
-              <h6>July 2021 - Mar 2022</h6>
+              <h6>July 2021 - March 2022</h6>
             </div>
             <div className="item reverse">
               <div className="item_title">

@@ -32,7 +32,7 @@ export const ProjectStyles = styled.div`
         position: absolute;
         width: max-content;
         margin: 30px;
-        font-size: 25px;
+        font-size: 18px;
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
         color: aliceblue;
         &.right {
